@@ -165,7 +165,7 @@ It is recommended that you use Nsight.
    Change the string to your name, rebuild, and run.
    (`m_yourName = "TODO: YOUR NAME HERE";`)
 2. Take a screenshot of the window (including title bar) and save it to the
-   `images` directory for Part 6.
+   `images` directory for Part 7.
 3. You're done with some code changes now; make a commit!
    * Make sure to `git add` the `main.cpp` file.
    * Use `git status` to make sure you didn't miss anything.
@@ -189,17 +189,53 @@ rest of your development on the lab computer.
    * If you have switchable graphics (NVIDIA Optimus), see the note in Part 3.
 5. Run the program for a few seconds, then close it.
 6. At the top of the report page, select *Timeline* from the drop-down menu.
-7. Take a screenshot of this tab and save it to `images`, for Part 6.
+7. Take a screenshot of this tab and save it to `images`, for Part 7.
 
 ### OS X & Linux
 
 1. Open your project in Nsight.
 2. *Run*->*Profile*.
 3. Run the program for a few seconds, then close it.
-4. Take a screenshot of the timeline and save it to `images`, for Part 6.
+4. Take a screenshot of the timeline and save it to `images`, for Part 7.
 
+## Part 6: Nsight Debugging
+**NOTE: This part *cannot* be done on the lab computers, as it requires
+administrative access.** If you do not have a CUDA-capable computer of your
+own, you may need to borrow one for this part. However, you can still do the
+rest of your development on the lab computer.
 
-## Part 6: Write-up
+### Windows
+1. Switch your build configuration to "Debug" and `Rebuild` the solution.
+2. Select the Nsight menu in Visual Studio and select *Start CUDA Debugging*.
+3. When prompted, select the *Connect Unsecurely* option to start Nsight.
+4. Exit the app.
+5. Now place a breakpoint at Line 30 of `kernel.cu` => `if (x <= width && y <= height) {`
+6. Restart the CUDA Debugging. This time, the breakpoint should be hit.
+    * The *Autos* and *Locals* debugging tabs should appear at the bottom. (You can also open this from Debug -> Windows -> Autos/Locals)
+	  * Notice the values that are in the autos.
+7. The following steps should be done with Nsight CUDA Debugging running.
+8. Go to Nsight menu and select *Next Active Warp*. Now notice the values that have changed (hightlighted in red).
+9. Now, let's try to go to a particular index (pick your own number - anything greater than 1000).
+    * Right click the breakpoint and select conditions.
+	  * The window that pops up should have defaults *Conditional Expression* and *is true*.
+	  * In the third box, put it `index == <your number>`.
+	  * Click close.
+10. Now click *Continue* in the Visual Studio toolbar.
+11. The breakpoint should be hit one more time. This time, the Autos window will should `index` as your number.
+12. Goto `Nsight` -> `Windows` -> `CUDA Info` -> `CUDA Info 1`.
+    * This window shows information about the kernel, threads, blocks, warps, memory allocations etc. Choose from the drop downs to view each. Finally, select *Warp* and keep it that way.
+13. Take a screenshot of this *Autos* window and the *CUDA Info* -> *Warp* as a image and save it under `images`.
+14. Play around with Nsight debugger as much as you want.
+
+### OSX And Linux
+
+TODO:
+* Choose Debug in CMake using `cmake .. -DCMAKE_BUILD_TYPE=Debug` from command line or set it to `Debug` in the GUI.
+* Build
+* Launch Nsight and select workspace and executable.
+* Do similar steps as Windows.
+
+## Part 7: Write-up
 
 1. Update ALL of the TODOs at the top of this README:
    * Finish your `README.md`
