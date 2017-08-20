@@ -1,7 +1,7 @@
 Project 0 CUDA Getting Started: Instructions
 ========================
 
-This is due **Sunday, September 4 2016**. (See [late policy](#late-policy) at the bottom)
+This is due **Sunday, September 3 2017**. (See [late policy](#late-policy) at the bottom)
 
 **Summary:** In this project, you will set up your CUDA development tools and
 verify that you can build, run, and do performance analysis.
@@ -26,7 +26,7 @@ machine with these specs, you may use computers in the Moore or SIG Labs.
 * You will not presently be able to do GPU performance profiling. This will be
   very important for debugging performance bottlenecks in your program. If you
   do not have administrative access to any CUDA-capable machine, please ~~email
-  a TA~~ post in [CIS 565 Fall 2016 Group](https://groups.google.com/forum/#!forum/cis-565-fall-2016).
+  a TA~~ post in [CIS 565 Fall 2017 Group](https://groups.google.com/forum/#!forum/cis-565-fall-2017).
 
 
 ## Part 1: Setting up your development environment
