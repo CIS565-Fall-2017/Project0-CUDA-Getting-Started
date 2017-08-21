@@ -1,7 +1,7 @@
 Project 0 CUDA Getting Started: Instructions
 ========================
 
-This is due **Sunday, September 3 2017**. (See [late policy](#late-policy) at the bottom)
+This is due **Friday, September 1 2017**. (See [late policy](#late-policy) at the bottom)
 
 **Summary:** In this project, you will set up your CUDA development tools and
 verify that you can build, run, and do performance analysis.
