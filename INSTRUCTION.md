@@ -37,15 +37,18 @@ Skip this part if you are developing on a lab computer.
 
 1. Make sure you are running Windows 7/8/10 and that your NVIDIA drivers are
    up-to-date. You will need support for OpenGL 4.0 or better in this course.
-2. Install Visual Studio 2013 (**not** 2015).
-   * 2010/2012 will also work, if you already have one installed.
+2. Install Visual Studio 2015.
+   * 2012/2013 will also work, if you already have one installed.
+   * 2010 doesn't work because glfw only supports 32-bit binaries for vc2010.
+   **We don't provide libraries for Win32**
    * http://www.seas.upenn.edu/cets/software/msdn/
    * You need C++ support. None of the optional components are necessary.
-3. Install [CUDA 7.5](https://developer.nvidia.com/cuda-downloads?sid=925343).
-   * CUDA 7.5 is recommended for its new performance profiling tools.
-     However, 7.0 is fine. 
-   * Use the Express installation. If using Custom, make sure you select
-     Nsight for Visual Studio.
+3. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads).
+   * CUDA 8 is enforced for consistency because VS2015 doesn't support CUDA 7.5.
+   However, if you have any reason that you have to use CUDA 7.5, please clarify
+   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
+    
+   * Use the Express installation. If using Custom, make sure you select Nsight for Visual Studio.
 4. Install [CMake](http://www.cmake.org/download/). (Windows binaries are
    under "Binary distributions.")
 5. Install [Git](https://git-scm.com/download/win).
@@ -57,9 +60,11 @@ Skip this part if you are developing on a lab computer.
    * On 10.10, this may not actually be necessary. Try running `gcc`
      in a terminal first.
 3. Install OS X Unix Command Line Development Tools (if necessary).
-4. Install [CUDA 7](https://developer.nvidia.com/cuda-downloads?sid=925343)
+4. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads)
    (don't use cask; the CUDA cask is outdated).
-   * CUDA 7.5 is recommended for its new performance profiling tools.
+   * CUDA 8 is recommended.
+   However, if you have any reason that you have to use CUDA 7.5, please clarify
+   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
    * Make sure you select Nsight.
 5. Install [Git](https://git-scm.com/download/mac)
    (or: `brew install git`).
@@ -71,12 +76,13 @@ Skip this part if you are developing on a lab computer.
 Note: to debug CUDA on Linux, you will need an NVIDIA GPU with Compute
 Capability 5.0.
 
-1. Install [CUDA 7.5](https://developer.nvidia.com/cuda-downloads?sid=925343).
-   * CUDA 7.5 is recommended for its new performance profiling tools.
+1. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads).
+   * CUDA 8 is recommended.
+   However, if you have any reason that you have to use CUDA 7.5, please clarify
+   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
    * Make sure you select Nsight.
 2. Install Git (`apt-get install git` on Debian/Ubuntu).
 3. Install CMake (`apt-get install cmake` on Debian/Ubuntu).
-
 
 ## Part 2: Fork & Clone
 
@@ -212,14 +218,14 @@ rest of your development on the lab computer.
 5. Now place a breakpoint at Line 30 of `kernel.cu` => `if (x <= width && y <= height) {`
 6. Restart the CUDA Debugging. This time, the breakpoint should be hit.
     * The *Autos* and *Locals* debugging tabs should appear at the bottom. (You can also open this from Debug -> Windows -> Autos/Locals)
-	  * Notice the values that are in the autos.
+    * Notice the values that are in the autos.
 7. The following steps should be done with Nsight CUDA Debugging running.
 8. Go to Nsight menu and select *Next Active Warp*. Now notice the values that have changed (hightlighted in red).
 9. Now, let's try to go to a particular index (pick your own number - anything greater than 1000).
     * Right click the breakpoint and select conditions.
-	  * The window that pops up should have defaults *Conditional Expression* and *is true*.
-	  * In the third box, put it `index == <your number>`.
-	  * Click close.
+    * The window that pops up should have defaults *Conditional Expression* and *is true*.
+    * In the third box, put it `index == <your number>`.
+    * Click close.
 10. Now click *Continue* in the Visual Studio toolbar.
 11. The breakpoint should be hit one more time. This time, the Autos window will should `index` as your number.
 12. Goto `Nsight` -> `Windows` -> `CUDA Info` -> `CUDA Info 1`.
