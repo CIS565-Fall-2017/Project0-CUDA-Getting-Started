@@ -59,6 +59,8 @@ endif()
 
 # Linux-specific hacks/fixes
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+	find_package(X11 REQUIRED)
+	list(APPEND CORELIBS ${X11_LIBRARIES} ${X11_Xrandr_LIB} ${X11_Xxf86vm_LIB} ${X11_Xi_LIB})
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lX11 -lXxf86vm -lXrandr -lXi")
 endif()
 
