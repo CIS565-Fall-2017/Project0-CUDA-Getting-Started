@@ -80,6 +80,7 @@ Capability 5.0.
    * CUDA 8 is recommended.
    However, if you have any reason that you have to use CUDA 7.5, please clarify
    you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
+   For more Linux installation info, check out [CUDA_Linux Installation Guide](http://developer2.download.nvidia.com/compute/cuda/8.0/secure/Prod2/docs/sidebar/CUDA_Installation_Guide_Linux.pdf?weyH9mwDHKcyP4LBe1idPT47TTMqM6s3HKNrW1hOYPlw0om73Jx7isV6gG6L3O7p6pJm1JNcY4sp_4LDlBVE7dG7mGyjDeKq5O_T7eRdBDlb1I-ZhvperJ5VfM8dT_R6RuRj5hTUEijr5vY8_KFfZAQ1dvq2CQOW5O2gLBtMc3UISE-o11fzsUTBYQ).
    * Make sure you select Nsight.
 2. Install Git (`apt-get install git` on Debian/Ubuntu).
 3. Install CMake (`apt-get install cmake` on Debian/Ubuntu).
@@ -146,13 +147,12 @@ just rebuild your VS/Nsight project to make it update itself.
 
 ### OS X & Linux
 
-It is recommended that you use Nsight.
+It is recommended that you use Nsight. Nsight is shipped with CUDA. If you set up the environment path correctly `export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}` (Note that simply typing the `export` command is a temporary change. The `PATH` variable won't be updated permanently. For permanent change, add it to your shell configuration file, e.g. `~/.profile` on Ubuntu), you can run Nsight by typing `nsight` in your terminal. 
 
 1. Open Nsight. Set the workspace to the one *containing* your cloned repo.
 2. *File->Import...->General->Existing Projects Into Workspace*.
    * Select the Project 0 repository as the *root directory*.
-3. Select the *cis565-* project in the Project Explorer. From the *Project*
-   menu, select *Build All*.
+3. Select the *cis565-* project in the Project Explorer. Right click the project. Select *Build Project*.
    * For later use, note that you can select various Debug and Release build
      configurations under *Project->Build Configurations->Set Active...*.
 4. If you see an error like `CUDA_SDK_ROOT_DIR-NOTFOUND`:
@@ -234,12 +234,10 @@ rest of your development on the lab computer.
 14. Play around with Nsight debugger as much as you want.
 
 ### OSX And Linux
+Unluckily, from [CUDA GDB documentation](http://docs.nvidia.com/cuda/cuda-gdb/index.html#single-gpu-debugging), debugger doesn't work when your CUDA application and X11 GUI both run on the same GPU. Even if you have multiple GPUs, it doesn't make any sense since we run both glfw (requiring X11) and CUDA kernel code in our application, which means there's no way to isolate them to different GPUs.
 
-TODO:
-* Choose Debug in CMake using `cmake .. -DCMAKE_BUILD_TYPE=Debug` from command line or set it to `Debug` in the GUI.
-* Build
-* Launch Nsight and select workspace and executable.
-* Do similar steps as Windows.
+However, there's a BETA feature available on Linux and supports devices with SM3.5 compute capability. If the compute capability of your graphics card is beyond SM3.5, you might be able to debug CUDA code by following the [instruction](http://docs.nvidia.com/cuda/cuda-gdb/index.html#single-gpu-debugging-with-desktop-manager-running). 
+
 
 ## Part 7: Write-up
 
