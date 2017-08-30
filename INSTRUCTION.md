@@ -22,12 +22,6 @@ machine with these specs, you may use computers in the Moore or SIG Labs.
 
   CUDA 8.0, Visual Studio 2015, CMake and Git are already installed on all of the CETS Lab PCs including the machines in Moore 100B and Moore 100C.
 
-* You will not presently be able to do GPU performance profiling. This will be
-  very important for debugging performance bottlenecks in your program. If you
-  do not have administrative access to any CUDA-capable machine, please ~~email
-  a TA~~ post in [CIS 565 Fall 2017 Group](https://groups.google.com/forum/#!forum/cis-565-fall-2017).
-
-
 ## Part 1: Setting up your development environment
 
 Skip this part if you are developing on a lab computer.
@@ -232,7 +226,7 @@ rest of your development on the lab computer.
 13. Take a screenshot of this *Autos* window and the *CUDA Info* -> *Warp* as a image and save it under `images`.
 14. Play around with Nsight debugger as much as you want.
 
-### OSX And Linux
+### OS X & Linux
 Unluckily, from [CUDA GDB documentation](http://docs.nvidia.com/cuda/cuda-gdb/index.html#single-gpu-debugging), debugger doesn't work when your CUDA application and X11 GUI both run on the same GPU. Even if you have multiple GPUs, it doesn't make any sense since we run both glfw (requiring X11) and CUDA kernel code in our application, which means there's no way to isolate them to different GPUs.
 
 However, there's a BETA feature available on Linux and supports devices with SM3.5 compute capability. If the compute capability of your graphics card is beyond SM3.5, you might be able to debug CUDA code by following the [instruction](http://docs.nvidia.com/cuda/cuda-gdb/index.html#single-gpu-debugging-with-desktop-manager-running). 
