@@ -3,11 +3,16 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Jiawei Wang
+* Tested on: Windows 10, i7-6700 @ 2.60GHz 16.0GB, GTX 970M 3072MB (Personal)
 
-### (TODO: Your README)
+### Project 0 Results:
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+*Part 4 Modify:*
+  ![](images/CIS565_01.JPG)
+*Part 5 Analyze:*
+  ![](images/CIS565_02.JPG)
+*Part 6 Nsight Debugging:*
+  ![](images/CIS565_03.JPG)
+  
 
