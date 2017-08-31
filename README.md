@@ -10,11 +10,9 @@ A screenshot of the window (including title bar) with changed string to my name:
 
 ![](images/2_getting_startted.png)
 
-Two screenshots of the Timeline tab of performance analysis:
+A screenshot of the Timeline tab of performance analysis:
 
 ![](images/3_analyze_timeline_1.png)
-
-![](images/4_analyze_timeline_2.png)
 
 A screenshot of Autos window and CUDA info->warp:
 
