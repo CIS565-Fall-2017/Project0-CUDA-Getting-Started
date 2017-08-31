@@ -3,11 +3,19 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* LINSHEN XIAO
+* Tested on: Windows 10, Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 16.0GB, NVIDIA GeForce GTX 970M (Personal computer)
 
-### (TODO: Your README)
+A screenshot of the window (including title bar) with changed string to my name:
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](images/2_getting_startted.png)
 
+Two screenshots of the Timeline tab of performance analysis:
+
+![](images/3_analyze_timeline_1.png)
+
+![](images/4_analyze_timeline_2.png)
+
+A screenshot of Autos window and CUDA info->warp:
+
+![](images/5_Autos_window_&_CUDA_info.png)
