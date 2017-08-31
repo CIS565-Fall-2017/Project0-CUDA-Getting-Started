@@ -11,6 +11,6 @@ Project 0 CUDA Getting Started
 Include screenshots, analysis, etc. (Remember, this is public, so don't put
 anything here that you don't want to share with the world.)
 
-![Part 4](Project0-CUDA-Getting-Started/images/Capture.PNG)
-![Part 5](Project0-CUDA-Getting-Started/images/Part5Analyze.PNG)
-~[Part 6](Project0-CUDA-Getting-Started/images/Part6Debugging.PNG)
+![Part 4](images/Capture.PNG)
+![Part 5](images/Part5Analyze.PNG)
+![Part 6](images/Part6Debugging.PNG)
