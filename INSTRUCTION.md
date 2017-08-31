@@ -174,10 +174,10 @@ It is recommended that you use Nsight. Nsight is shipped with CUDA. If you set u
 
 ## Part 5: Analyze
 
-**NOTE: This part *cannot* be done on the lab computers, as it requires
+~**NOTE: This part *cannot* be done on the lab computers, as it requires
 administrative access.** If you do not have a CUDA-capable computer of your
 own, you may need to borrow one for this part. However, you can still do the
-rest of your development on the lab computer.
+rest of your development on the lab computer.~ This has been set up on the Windows machines in Moore 100.
 
 ### Windows
 
@@ -198,10 +198,10 @@ rest of your development on the lab computer.
 4. Take a screenshot of the timeline and save it to `images`, for Part 7.
 
 ## Part 6: Nsight Debugging
-**NOTE: This part *cannot* be done on the lab computers, as it requires
+~**NOTE: This part *cannot* be done on the lab computers, as it requires
 administrative access.** If you do not have a CUDA-capable computer of your
 own, you may need to borrow one for this part. However, you can still do the
-rest of your development on the lab computer.
+rest of your development on the lab computer.~ This has been set up on the Windows machines in Moore 100.
 
 ### Windows
 1. Switch your build configuration to "Debug" and `Rebuild` the solution.
