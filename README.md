@@ -18,4 +18,4 @@ Project 0 CUDA Getting Started
 ![](images/Autos.png)
 
 - Screenshot of CUDA Info1
-![](images/CUDA Info1.png)
+![](images/info1.png)
