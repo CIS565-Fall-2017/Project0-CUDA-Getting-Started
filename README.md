@@ -3,11 +3,17 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+*  Daniel Daley-Montgomery
+* Tested on: MacBook Pro, OSX 10.12, i7 @ 2.3GHz, 16GB RAM, GT 750M 2048MB (Personal Machine)
 
-### (TODO: Your README)
+** Results
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+* In order to build the project, I seemed to have to downgrade my Apple clang version from Command Line Tools 8.3 to lower (I chose 7.3).
 
+* When running the project, the following image is displayed:
+
+![](images/ScreenShot_Program.png)
+
+* Having run the profiler for a few seconds, this how the tasks were distributed:
+
+![](images/ScreenShot_Timeline.png)
