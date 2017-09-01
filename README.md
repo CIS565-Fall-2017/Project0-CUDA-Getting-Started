@@ -3,11 +3,23 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Charles Wang
+* Tested on: Windows 10, i7-6700K @ 4.00GHz 22GB, GTX 1060 6GB (Personal Computer)
 
 ### (TODO: Your README)
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+PART 4: Modify
+
+Visual Studio solution was built properly. With my name included in the code, the program runs like this:
+![](images/image-4.PNG)
+
+PART 5:
+
+Running the performance analysis looks like this:
+![](images/image-5.PNG)
+
+Part 6:
+
+The CUDA Info 1 window and autos/locals look like this:
+![](images/image-6.PNG)
 
