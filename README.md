@@ -8,10 +8,10 @@ Project 0 CUDA Getting Started
 
 ### (README)
 
-![](./Part4.PNG)
+![](./images/Part4.PNG)
 
-![](timeline.PNG)
+![](./images/timeline.PNG)
 
-![](Warp.PNG)
+![](./images/Warp.PNG)
 
-![](autos.PNG)
+![](./images/autos.PNG)
