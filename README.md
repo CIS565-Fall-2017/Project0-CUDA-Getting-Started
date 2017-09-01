@@ -3,11 +3,11 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Ricky Rajani
+* Tested on: Windows 7, i7-6700 @ 3.40GHz 16GB, NVIDIA Quadro K620 (Moore 100C Lab)
 
-### (TODO: Your README)
-
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+Part 4 Test: ![](images/project0-part4.png)
+Part 5 Test: ![](images/project0-part5.png)
+Part 6 Test: ![](images/project0-part6_1.png)
+Part 6 Test: ![](images/project0-part6_2.png)
 
