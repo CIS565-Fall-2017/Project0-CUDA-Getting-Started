@@ -8,6 +8,6 @@ Project 0 CUDA Getting Started
 
 ![App Screenshot] (images/screenshot.PNG)
 
-![Timeline] (images/timeline.PNG)
+![Timeline] (https://github.com/AgentLee/Project0-CUDA-Getting-Started/blob/master/images/timeline.PNG)
 
 ![Autos and Info] (images/timeline.PNG)
