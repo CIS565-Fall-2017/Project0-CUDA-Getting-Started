@@ -8,10 +8,10 @@ Project 0 CUDA Getting Started
 
 ### Yuxin Hu
 1. Programming Running Result
-    ![](images/GettingStartedScreenShot.png)
+![](images/GettingStartedScreenShot.PNG)
 2. Performance Analaysis
-    ![](images/PerformanceAnalysis.png)
-	![](images/PerformanceAnalysis2.png)
+![](images/PerformanceAnalysis.PNG)
+![](images/PerformanceAnalysis2.PNG)
 3. Cuda Debug Info
-    ![](images/CudaInfoDebugAuto.png)
+![](images/CudaInfoDebugAuto.PNG)
 
