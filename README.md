@@ -11,14 +11,14 @@ Project 0 CUDA Getting Started
 
 1. Output
 
-![](images/1.png)
+![](images/1.PNG)
 
 
 2. Nsight Timeline
 
-![](images/2.png)
+![](images/2.PNG)
 
 
 3. Nsight Warps and Autos
-![](images/3.png)
+![](images/3.PNG)
 
