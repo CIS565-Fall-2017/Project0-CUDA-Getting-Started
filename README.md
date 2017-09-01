@@ -15,6 +15,10 @@ Currently the screenshot of project 0 would be like this:
 
 ![](http://i.imgur.com/SU29DJ2.jpg)
 
+![](http://i.imgur.com/rD4HYJr.png)
+
+![](http://i.imgur.com/mCB94bG.png)
+
 Modification of CMakeLists.txt:
 
 **OPTIONS -arch=sm_52**
