@@ -6,8 +6,8 @@ Project 0 CUDA Getting Started
 * Jonathan Lee
 * Tested on: Windows 7, i7-7700 @ 4.2GHz 16B, GTX 1070 (Personal Machine)
 
-![App Screenshot] (images/screenshot.PNG)
+[<img src="images/screenshot.PNG">](images/screenshot.PNG)
 
-![Timeline] (https://github.com/AgentLee/Project0-CUDA-Getting-Started/blob/master/images/timeline.PNG)
+[<img src="images/timeline.PNG">](images/timeline.PNG)
 
-![Autos and Info] (images/timeline.PNG)
+[<img src="images/autos&info.PNG">](images/autos&info.PNG)
