@@ -3,11 +3,18 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Mauricio Mutai
+* Tested on: Windows 10, i7-7700HQ @ 2.80GHz 16GB, GTX 1050Ti 4GB (Personal Computer)
 
-### (TODO: Your README)
+** Part 4: ** Image showing title bar modified to have my name
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](images/part4.png)
+
+** Part 5: ** Image of __Timeline__ in the Nsight Performance Analysis
+
+![](images/part5.png)
+
+** Part 6: ** Image of __Autos__ and __CUDA Info -> Warp__ from CUDA Debugging
+
+![](images/part6.png)
 
