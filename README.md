@@ -8,13 +8,13 @@ Project 0 CUDA Getting Started
 
 **Part 4:** Image showing title bar modified to have my name
 
-![](images/part4.png)
+![](images/part4.PNG)
 
 **Part 5:** Image of *Timeline* from Nsight Performance Analysis
 
-![](images/part5.png)
+![](images/part5.PNG)
 
 **Part 6:** Image of *Autos* and *CUDA Info -> Warp* from CUDA Debugging
 
-![](images/part6.png)
+![](images/part6.PNG)
 
