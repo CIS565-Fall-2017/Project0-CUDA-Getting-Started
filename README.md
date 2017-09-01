@@ -15,4 +15,4 @@ Performance analysis yielded the following results:
 ![](images/ss_performance.png)
 
 After (finally) getting breakpoints and autos/locals to display properly, the following was the result of analyzing the Warps in CUDA Info 1:
-![](images/ss-warps.png)
+![](images/ss_warps.png)
