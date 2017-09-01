@@ -10,12 +10,12 @@ Project 0 CUDA Getting Started
 
 #### Part 4: Modify
 
-![](./images/Capture1.png)
+![](./images/Capture1.PNG)
 
 #### Part 5: Analyze
 
-![](./images/Capture2.png)
+![](./images/Capture2.PNG)
 
 #### Part 6: Nsight Debugging
 
-![](./images/Capture3.png)
+![](./images/Capture3.PNG)
