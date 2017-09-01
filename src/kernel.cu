@@ -26,14 +26,14 @@ __global__ void createVersionVisualization(uchar4* PBOpos, int width, int height
     int x = (blockIdx.x * blockDim.x) + threadIdx.x;
     int y = (blockIdx.y * blockDim.y) + threadIdx.y;
     int index = x + (y * width);
-
+	
     if (x <= width && y <= height) {
         // Each thread writes one pixel location in the texture (textel)
         PBOpos[index].w = 0;
         PBOpos[index].x = 0;
         PBOpos[index].y = 0;
         PBOpos[index].z = 0;
-
+		
         int ver = y < height / 2 ? major : minor;
         if (ver == 0) {
             PBOpos[index].x = 255;
@@ -47,7 +47,7 @@ __global__ void createVersionVisualization(uchar4* PBOpos, int width, int height
         } else if (ver == 5) {
             PBOpos[index].z = 255;
             PBOpos[index].y = 255;
-        }
+		}
     }
 }
 

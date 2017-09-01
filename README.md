@@ -3,11 +3,16 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Joseph Klinger
+* Tested on: (TODO) Windows 10, i5-7300HQ (4 CPUs) @ ~2.50GHz 2B, GTX 1050 6030MB (Personal Machine)
 
-### (TODO: Your README)
+### README
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+After successfully installing and building, my personal machine resulted in the following image upon running:
+![](images/ss_color.png)
 
+Performance analysis yielded the following results:
+![](images/ss_performance.png)
+
+After (finally) getting breakpoints and autos/locals to display properly, the following was the result of analyzing the Warps in CUDA Info 1:
+![](images/ss-warps.png)
