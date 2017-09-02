@@ -10,5 +10,5 @@ Project 0 CUDA Getting Started
 
 Output from running the demo:
 
-![](images/setup.png)
+![](./images/setup.png)
 
