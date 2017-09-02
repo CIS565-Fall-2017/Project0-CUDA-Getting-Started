@@ -17,6 +17,9 @@ A simple project setup excercise for CUDA development. Had a lot of issues with 
 The project running
 ![](images/part4.png)
 
+Timeline
+![](images/part5.png)
+
 The debugger running with a conditional breakpoint of index == 1337
 ![](images/part7.png)
 
