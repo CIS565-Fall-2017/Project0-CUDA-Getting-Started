@@ -10,7 +10,7 @@ Project 0 CUDA Getting Started
   * 32.0 GB RAM
   * NVIDIA GeForce GTX 1070 (mobile version)
 
-### (TODO: Your README)
+## Details
 
 A simple project setup excercise for CUDA development. Had a lot of issues with CMake and VS, because I had a broken installation of VS 2017 RC before.
 
