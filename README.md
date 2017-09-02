@@ -4,8 +4,10 @@ Project 0 CUDA Getting Started
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
 * Anton Khabbaz
+* pennkey:akhabbaz
 * Tested on: Windows 10 surface book i7-6600u at 2.66 GHz with a GPU GTX 965M
 Personal computer
+
 
 ### (TODO: Your README)
 
@@ -38,4 +40,5 @@ I also got a screenshot of the block and thread that index= 1200 stopped at:
 ![](images/warps.png)
 
 It all worked well on windows..Too bad I needed to uninstall VS 2017.
-
+ didn't need to modify the CMakeLists.txt at all.  There were variables in the cmake gui that
+ I thought I may need to define but that was not necessary.
