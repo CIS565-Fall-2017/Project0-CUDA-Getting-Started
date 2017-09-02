@@ -3,11 +3,21 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Mohamed Soudy
+* Tested on: Windows 10 Enterprise, i7 @ 2.7 GHz 16GB, GT 650M 1024 MB
 
-### (TODO: Your README)
+Screenshots
+====================
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](images/title_name.png)
 
+
+![](images/timeline.png)
+
+
+![](images/autos_cuda_info1.png)
+
+CMakeList Edits
+====================
+
+Changed line 69 in CMakeLists.txt from find_package(CUDA 8.0 REQUIRED) to find_package(CUDA REQUIRED).
