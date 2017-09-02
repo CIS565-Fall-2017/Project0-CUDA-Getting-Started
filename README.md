@@ -3,11 +3,17 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Sarah Forcier
+* Tested on: Windows 10, Xeon(R) CPU E5-130 @ 3.70GHz, Geforce GTX 1070 (SIG Lab)
 
-### (TODO: Your README)
+### Build & Run: Output Window
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](images/window.png)
 
+### Analyze: Timeline 
+
+![](images/timeline.png)
+
+### Nsight Debugging: Breakpoint
+
+![](images/debug.png)
