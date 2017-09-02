@@ -3,11 +3,13 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Aman Sachan
+* Tested on: Windows 10, i7-7700HQ @ 2.8GHz 32GB, GTX 1070 8074MB (Personal Machine: Customized MSI GT62VR 7RE)
 
-### (TODO: Your README)
+### Screenshots
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](images/InitialScreenshot.png)
 
+![](images/NSight_Timeline.png)
+
+![](images/NSight_warps.png)
