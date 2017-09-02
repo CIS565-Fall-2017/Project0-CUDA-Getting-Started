@@ -9,10 +9,10 @@ Project 0 CUDA Getting Started
 ### README
 
 Main Output
-![](images/00_Titlebar.png)
+![](./images/00_Titlebar.png)
 
 Timeline Report of Performance Analysis for CUDA and OpenGL
-![](images/Timeline.png)
+![](./images/Timeline.png)
 
 Breakpoint Autos and Warps CUDA Info
-![](images/WarpsAutos.png)
+![](./images/WarpsAutos.png)
