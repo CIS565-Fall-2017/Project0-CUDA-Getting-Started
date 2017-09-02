@@ -3,11 +3,19 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Name : Hanming Zhang
+* Tested on: Windows 10, i7-6700K @ 4.00GHz 16.0GB, GTX 980 4096MB (Personal Desktop)
 
-### (TODO: Your README)
+### 
 
 Include screenshots, analysis, etc. (Remember, this is public, so don't put
 anything here that you don't want to share with the world.)
 
+- Part 4 Modify Screenshot
+![](images/Part4_Modify.jpg)
+
+- Part 5 Analyze
+![](images/Part5_Analyze.jpg)
+
+- Part 5 Autos & CUDA Infos
+![](images/Part6_Autos_CUDA_Info.jpg)
