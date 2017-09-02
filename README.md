@@ -10,5 +10,18 @@ Project 0 CUDA Getting Started
 
 Output from running the demo:
 
-![](./images/setup.png)
+![](./images/setup.PNG)
+
+Output from the timeline:
+
+![](./images/setup_timeline.PNG)
+
+Breakpoint in CUDA kernel:
+
+![](./images/setup_autos.PNG)
+
+CUDA info:
+
+![](./images/setup_info.PNG)
+
 
