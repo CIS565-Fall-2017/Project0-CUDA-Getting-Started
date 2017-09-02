@@ -3,11 +3,19 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Yi Guo
+* Tested on:  Windows 8.1, Intel(R) Core(TM)i5-4200M CPU @ 2.50GHz 8GB, NVIDIA GeForce 840M (Personal Notebook)
 
-### (TODO: Your README)
+****Screenshot of the Test Window****
+![](./images/TestScreen.png) 
+       
+****Screenshot of the Performance Analysis****
+![](./images/Performance_Analysis.png) 
+       
+****Screenshot of the Auto Window****
+![](./images/AutoWindow.png) 
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+****Screenshot of the CUDA Info****
+![](./images/CUDA_Info1.png) 
+
 
