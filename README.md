@@ -5,11 +5,11 @@ Project 0 CUDA Getting Started
 
 * Yash Vardhan
 * Tested on: Windows 10 Pro, Intel i5-4200U (4) @ 2.600GHz 4GB, NVIDIA GeForce 840M 2048MB
-	Previously on Kubuntu 16.04.3.
+* Previously tested on Kubuntu 16.04.3, same configuration.
 
 Details
 =========
-I had to migrate my environment from Kubuntu to Windows to get started on debugging, but it was worthy.
+I had to migrate my environment from Kubuntu to Windows to get started on debugging.
 
 ### Results
 
