@@ -1,13 +1,40 @@
-Project 0 CUDA Getting Started
-====================
+# CIS 565: Project 0
+ 
+ ![Built](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg) ![Issues](https://img.shields.io/github/issues-raw/badges/shields/website.svg) ![CUDA 8.0](https://img.shields.io/badge/CUDA-8.0-green.svg?style=flat)  ![Platform](https://img.shields.io/badge/platform-Desktop-bcbcbc.svg)  ![Developer](https://img.shields.io/badge/Developer-Youssef%20Victor-0f97ff.svg?style=flat)
+ 
+ 
 
-**University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
+- [Features](#features)
+ 
+- [Screenshots](#screenshots)
+ 
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
 
-### (TODO: Your README)
+ ____________________________________________________
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
 
+ 
+ 
+
+#### Features
+
+- 
+
+[x] Black Part
+
+[x] Green Part
+
+
+#### Screenshots-
+
+##### window screen:
+
+![main](/images/screenshot.PNG)
+
+##### Analysis:
+
+![Analysis](/images/analysis.PNG)
+
+##### NSight Debugging:
+
+![NSight](/images/nsight.PNG)
