@@ -21,6 +21,6 @@ Part 5:
 
 ![](images/Timeline.png)
 
-Part 6:
+Part 6: index = 2800
 
 ![](images/DebugShot.png)
