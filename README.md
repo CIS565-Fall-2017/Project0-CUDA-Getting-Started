@@ -18,9 +18,9 @@
 
 #### Features
 
-[x] Black Part
+- [x] Black Part
 
-[x] Green Part
+- [x] Green Part
 
 
 #### Screenshots-
