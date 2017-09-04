@@ -18,8 +18,6 @@
 
 #### Features
 
-- 
-
 [x] Black Part
 
 [x] Green Part
@@ -29,7 +27,7 @@
 
 ##### window screen:
 
-![main](/images/screenshot.PNG)
+![main](/images/screenshot.png)
 
 ##### Analysis:
 
