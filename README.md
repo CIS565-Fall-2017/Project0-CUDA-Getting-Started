@@ -1,6 +1,6 @@
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* 
+
 
 Tested on: Windows 10, Intel Xeon CPU E5-1630 v4 @ 3.70 GHz, GTX 1070 (SIG Lab-VR6) 
  
