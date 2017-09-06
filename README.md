@@ -3,11 +3,18 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Tim Clancy (clancyt)
+* Tested on: (Personal) Windows 10, i5-4590 @ 3.30GHz 8GB, GTX 970
 
-### (TODO: Your README)
+### Analysis
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+Here are the three screenshots from testing.
 
+The modified project window stating name:
+![](images/getting_started.PNG)
+
+The Nsight Timeline after running the application for a bit:
+![](images/nsight_timeline.PNG)
+
+The Nsight Warps and Autos after running the debugger, with an index breakpoint set to 2017:
+![](images/nsight_warps.PNG)
