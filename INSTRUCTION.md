@@ -1,7 +1,7 @@
 Project 0 CUDA Getting Started: Instructions
 ========================
 
-This is due **Friday, September 1 2017**. (See [late policy](#late-policy) at the bottom)
+This is due **Friday, August 31st 2018**. (See [late policy](#late-policy) at the bottom)
 
 **Summary:** In this project, you will set up your CUDA development tools and
 verify that you can build, run, and do performance analysis.
@@ -25,6 +25,11 @@ machine with these specs, you may use computers in the Moore or SIG Labs.
 ## Part 1: Setting up your development environment
 
 Skip this part if you are developing on a lab computer.
+
+#### Notes
+- Before you get started: if you have multiple VS code and/or CMake versions, you will probably run into trouble. Either uninstall extra versions (if possible) or ensure that the correct VSCode (or XCode) and CMake versions are being chosen.
+- If you are running into a lot of trouble, a clean installation of VS Code (or XCode), CMake, and CUDA can help fix any problems if other methods don't work.
+- If you have driver issues or random crashing: uninstalling and reinstalling drivers usually works
 
 ### Windows
 
