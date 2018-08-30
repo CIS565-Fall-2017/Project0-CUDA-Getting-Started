@@ -78,7 +78,7 @@ Capability 5.0.
    * CUDA 8 is recommended.
    However, if you have any reason that you have to use CUDA 7.5, please clarify
    you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
-   For more Linux installation info, check out [CUDA_Linux Installation Guide](http://developer2.download.nvidia.com/compute/cuda/8.0/secure/Prod2/docs/sidebar/CUDA_Installation_Guide_Linux.pdf?weyH9mwDHKcyP4LBe1idPT47TTMqM6s3HKNrW1hOYPlw0om73Jx7isV6gG6L3O7p6pJm1JNcY4sp_4LDlBVE7dG7mGyjDeKq5O_T7eRdBDlb1I-ZhvperJ5VfM8dT_R6RuRj5hTUEijr5vY8_KFfZAQ1dvq2CQOW5O2gLBtMc3UISE-o11fzsUTBYQ).
+   For more Linux installation info, check out [CUDA_Linux Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html).
    * Make sure you select Nsight.
 2. Install Git (`apt-get install git` on Debian/Ubuntu).
 3. Install CMake (`apt-get install cmake` on Debian/Ubuntu).
