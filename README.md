@@ -9,5 +9,5 @@ Project 0 CUDA Getting Started
 
 ### Result
 
-![](1.jpg)
+![](1.JPG)
 
