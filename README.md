@@ -9,5 +9,15 @@ Project 0 CUDA Getting Started
 
 ### Result
 
-![](1.JPG)
+![](0.JPG)
+
+### Nsight
+
+![](1.png)
+
+![](2.png)
+
+![](3.png)
+
+![](4.png)
 
