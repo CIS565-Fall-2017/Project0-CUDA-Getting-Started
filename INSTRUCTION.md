@@ -1,7 +1,7 @@
 Project 0 CUDA Getting Started: Instructions
 ========================
 
-This is due **Friday, September 1 2017**. (See [late policy](#late-policy) at the bottom)
+This is due **Friday, August 31st 2018**. (See [late policy](#late-policy) at the bottom)
 
 **Summary:** In this project, you will set up your CUDA development tools and
 verify that you can build, run, and do performance analysis.
@@ -25,6 +25,11 @@ machine with these specs, you may use computers in the Moore or SIG Labs.
 ## Part 1: Setting up your development environment
 
 Skip this part if you are developing on a lab computer.
+
+#### Notes
+- Before you get started: if you have multiple VS code and/or CMake versions, you will probably run into trouble. Either uninstall extra versions (if possible) or ensure that the correct VSCode (or XCode) and CMake versions are being chosen.
+- If you are running into a lot of trouble, a clean installation of VS Code (or XCode), CMake, and CUDA can help fix any problems if other methods don't work.
+- If you have driver issues or random crashing: uninstalling and reinstalling drivers usually works
 
 ### Windows
 
@@ -73,7 +78,7 @@ Capability 5.0.
    * CUDA 8 is recommended.
    However, if you have any reason that you have to use CUDA 7.5, please clarify
    you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
-   For more Linux installation info, check out [CUDA_Linux Installation Guide](http://developer2.download.nvidia.com/compute/cuda/8.0/secure/Prod2/docs/sidebar/CUDA_Installation_Guide_Linux.pdf?weyH9mwDHKcyP4LBe1idPT47TTMqM6s3HKNrW1hOYPlw0om73Jx7isV6gG6L3O7p6pJm1JNcY4sp_4LDlBVE7dG7mGyjDeKq5O_T7eRdBDlb1I-ZhvperJ5VfM8dT_R6RuRj5hTUEijr5vY8_KFfZAQ1dvq2CQOW5O2gLBtMc3UISE-o11fzsUTBYQ).
+   For more Linux installation info, check out [CUDA_Linux Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html).
    * Make sure you select Nsight.
 2. Install Git (`apt-get install git` on Debian/Ubuntu).
 3. Install CMake (`apt-get install cmake` on Debian/Ubuntu).
