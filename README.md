@@ -9,7 +9,7 @@ cis 565 hw0
 
 ### Run Result
 
-![](0.png)
+![](0.JPG)
 
 ### Nsight Debugger Result
 
