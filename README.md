@@ -1,14 +1,22 @@
-Project 0 CUDA Getting Started
-====================
+# Project0-CUDA-Getting-Started
+cis 565 hw0
 
-**University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
+•	Yan Dong<br>
+* [LinkedIn](https://www.linkedin.com/in/%E8%A8%80-%E8%91%A3-572b1113b/)<br>
 
-* (TODO) YOUR NAME HERE
-  * (TODO) [LinkedIn](), [personal website](), [twitter](), etc.
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+•	Tested on: Windows 10, i7-4170HQ @ 2.50GHz 8GB, GTX 860 1GB <br>
+•	Change: `CMakeLists.txt`-> OPTIONS -arch=sm_50<br>
 
-### (TODO: Your README)
+### Run Result
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+![](0.png)
 
+### Nsight Debugger Result
+
+![](1.png)
+
+![](2.png)
+
+![](3.png)
+
+![](4.png)
