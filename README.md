@@ -3,11 +3,13 @@ Project 0 CUDA Getting Started
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Salaar Kohari
+  * [LinkedIn](https://www.linkedin.com/in/salaarkohari), [personal website](http://salaar.kohari.com)
+* Tested on: Windows 10, Intel Xeon @ 3.1GHz 32GB, GTX 980 4GB (SIG Lab)
 
-### (TODO: Your README)
+### Screenshots/Analysis
 
-Include screenshots, analysis, etc. (Remember, this is public, so don't put
-anything here that you don't want to share with the world.)
+Implemented analysis as described in instructions. The debug breakpoint could not be hit due to a gpu debugging setting that I could not access. Tried reinstalling everything to no avail.
 
+![](images/run.png)
+![](images/analysis.png)
