@@ -3,53 +3,59 @@ Project 0 CUDA Getting Started: Instructions
 
 This is due **Friday, August 31st 2018**. (See [late policy](#late-policy) at the bottom)
 
-**Summary:** In this project, you will set up your CUDA development tools and
+**Summary:** In this project, you will set up your GPU development tools and
 verify that you can build, run, and do performance analysis.
 
-This project is a simple program that demonstrates CUDA and OpenGL functionality
+Among other things, this project will give the TAs a sense of what projects students can or cannot run (e.g. WebGL, DirectX Realtime Raytracing).
+Make sure to fill out the survey at the end of this readme so the TAs can collect statistics.
+
+This project contains:
+1. A simple program that demonstrates CUDA and OpenGL functionality
 and interoperability, testing that CUDA has been properly installed. If the
 machine you are working on has CUDA and OpenGL 4.0 support, then when you run
 the program, you should see either one or two colors depending on your
 graphics card.
+2. A guide to enable WebGL support on your machine.
+3. A simple project to test your machine's (in)ability to run DXR for realtime raytracing projects.
 
-This project (and all other CUDA projects in this course) requires an NVIDIA
-graphics card with CUDA capability. Any card with Compute Capability 2.0
-(`sm_20`) or greater will work. Gheck your GPU in this [compatibility
-table](https://developer.nvidia.com/cuda-gpus).  If you do not have a personal
-machine with these specs, you may use computers in the Moore or SIG Labs.
-
-**If you need to use the lab computer for your development:**
-
-  CUDA 8.0, Visual Studio 2015, CMake and Git are already installed on all of the CETS Lab PCs including the machines in Moore 100B and Moore 100C.
+**Even if you need to use the lab computer for your development, follow these steps:**
 
 ## Part 1: Setting up your development environment
 
-Skip this part if you are developing on a lab computer.
-
 #### Notes
-- Before you get started: if you have multiple VS code and/or CMake versions, you will probably run into trouble. Either uninstall extra versions (if possible) or ensure that the correct VSCode (or XCode) and CMake versions are being chosen.
-- If you are running into a lot of trouble, a clean installation of VS Code (or XCode), CMake, and CUDA can help fix any problems if other methods don't work.
+
+- Before you get started: if you have multiple VS and/or CMake versions, you will probably run into trouble. Either uninstall extra versions (if possible) or ensure that the correct VS (or XCode) and CMake versions are being chosen.
+- If you are running into a lot of trouble, a clean installation of VS (or XCode), CMake, and CUDA can help fix any problems if other methods don't work.
 - If you have driver issues or random crashing: uninstalling and reinstalling drivers usually works
+
+## Part 1.0: Integrated Development Environment
 
 ### Windows
 
 1. Make sure you are running Windows 7/8/10 and that your NVIDIA drivers are
-   up-to-date. You will need support for OpenGL 4.0 or better in this course.
-2. Install Visual Studio 2015.
-   * 2012/2013 will also work, if you already have one installed.
-   * 2010 doesn't work because glfw only supports 32-bit binaries for vc2010.
+   up-to-date (a reboot is usually required for driver installations to work). You will need support for OpenGL 4.0 or better in this course.
+2. Install Visual Studio 2017.
    **We don't provide libraries for Win32**
-   * http://www.seas.upenn.edu/cets/software/msdn/
-   * You need C++ support. None of the optional components are necessary.
-3. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads).
-   * CUDA 8 is enforced for consistency because VS2015 doesn't support CUDA 7.5.
-   However, if you have any reason that you have to use CUDA 7.5, please clarify
-   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
-    
+   * Follow http://www.seas.upenn.edu/cets/software/msdn/
+   * Once you're in the Microsoft Azure download page, look for `Visual Studio 2017 Community` and download it.
+   * Make sure this ends up installing the `Visual Studio Installer` so you can select the packages you want.
+   * Once in the installer, do the following:
+          * Under the `Workloads` tab, select `Desktop Development with C++`. This will select almost everything you will need.
+          * Under the `Individual Components Tab`, make sure these packages are selected. DO NOT uncheck everything else.
+               * `VC++ 2017 version 15.9 v14.16 latest v141 tools`
+               * `Visual Studio C++ core features`
+               * `C++ Profiling Tools`
+               * `C++/CLI support`
+               * `Visual C++ ATL for x86 and x64`
+               * `Windows 10 SDK 10.0.17763.0`
+               * `NuGet Package Manager`
+               * `MSBuild`
+
+3. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads).
    * Use the Express installation. If using Custom, make sure you select Nsight for Visual Studio.
-4. Install [CMake](http://www.cmake.org/download/). (Windows binaries are
+4. Install [Git](https://git-scm.com/download/win).
+5. Install [CMake](http://www.cmake.org/download/). (Windows binaries are
    under "Binary distributions.")
-5. Install [Git](https://git-scm.com/download/win).
 
 ### OS X
 
@@ -58,11 +64,8 @@ Skip this part if you are developing on a lab computer.
    * On 10.10, this may not actually be necessary. Try running `gcc`
      in a terminal first.
 3. Install OS X Unix Command Line Development Tools (if necessary).
-4. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads)
+4. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads)
    (don't use cask; the CUDA cask is outdated).
-   * CUDA 8 is recommended.
-   However, if you have any reason that you have to use CUDA 7.5, please clarify
-   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
    * Make sure you select Nsight.
 5. Install [Git](https://git-scm.com/download/mac)
    (or: `brew install git`).
@@ -74,14 +77,67 @@ Skip this part if you are developing on a lab computer.
 Note: to debug CUDA on Linux, you will need an NVIDIA GPU with Compute
 Capability 5.0.
 
-1. Install [CUDA 8](https://developer.nvidia.com/cuda-downloads).
-   * CUDA 8 is recommended.
-   However, if you have any reason that you have to use CUDA 7.5, please clarify
-   you're using CUDA 7.5 in your report. Also you need to change `find_package(CUDA 8.0 REQUIRED)` in `CMakeLists.txt` to `find_package(CUDA REQUIRED)` before you build your project.
-   For more Linux installation info, check out [CUDA_Linux Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html).
+1. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads).
    * Make sure you select Nsight.
 2. Install Git (`apt-get install git` on Debian/Ubuntu).
 3. Install CMake (`apt-get install cmake` on Debian/Ubuntu).
+
+## Part 1.1: CUDA
+
+All CUDA projects in this course require an NVIDIA
+graphics card with CUDA capability. Any card with Compute Capability 2.0
+(`sm_20`) or greater will work. Gheck your GPU in this [compatibility
+table](https://developer.nvidia.com/cuda-gpus).  If you do not have a personal
+machine with these specs, you may use computers in the Moore or SIG Labs.
+
+### Windows
+
+1. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads).
+   * Use the Express installation. If using Custom, make sure you select Nsight for Visual Studio.
+
+### OS X
+
+1. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads)
+   (don't use cask; the CUDA cask is outdated).
+   * Make sure you select Nsight.
+
+### Linux
+
+Note: to debug CUDA on Linux, you will need an NVIDIA GPU with Compute
+Capability 5.0.
+
+1. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads).
+   * Make sure you select Nsight.
+
+## Part 1.2: WebGL
+
+1. Download [Google Chrome](https://www.google.com/chrome/)
+2. Check that you have [WebGL support](https://webglreport.com)
+3. If step 2 doesn't show WebGL compatibility, then try the following:
+     * *Enabling WebGL*
+          * Go to `chrome://settings` (in the address bar)
+          * Click the `Advanced ▼` button at the bottom of the page
+          * In the `System` section, ensure the `Use hardware acceleration when available` checkbox is checked (you'll need to relaunch Chrome for any changes to take effect)
+          * Go to `chrome://flags`
+          * Ensure that `Disable WebGL` is not activated (you'll need to relaunch Chrome for any changes to take effect)
+               * In newer versions, this option of `Disable WebGL` will not be available, you will instead have to search for `WebGL 2.0` (or some different version)
+               * If an option appears as `Default`, changed it to `Enabled`
+               * You should also change `Override software rendering list` to `Enabled`
+     * *Checking WebGL status*
+          * Go to `chrome://gpu`
+          * Inspect the WebGL item in the Graphics Feature Status list. The status will be one of the following:
+               * Hardware accelerated — WebGL is *enabled* and hardware-accelerated (running on the graphics card).
+               * Software only, hardware acceleration unavailable — WebGL is *enabled*, but running in software.
+               * Unavailable — WebGL is *not available* in hardware or software.
+
+## Part 1.3: DirectX Raytracing (DXR/RTX)
+
+This part will *only* work if you are using a Windows 10 computer. Skip this if you are not using Windows 10.
+
+1. Check that your GPU has [DirectX 12 support](https://www.geforce.co.uk/hardware/technology/dx12/supported-gpus) 
+2. Enable [Developer Mode](https://www.wikihow.com/Enable-Developer-Mode-in-Windows-10)
+3. Download [Windows SDK version 1809 (10.0.17763.0)](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive) and install it (use the `INSTALL SDK` option when downloading)
+4. Once you reach Part 3 in the Windows section, check if you can run the `D3D12RaytracingHelloWorld` project.
 
 ## Part 2: Fork & Clone
 
@@ -103,11 +159,11 @@ Capability 5.0.
 * [How to use GitHub](https://guides.github.com/activities/hello-world/)
 * [How to use Git](http://git-scm.com/docs/gittutorial)
 
-
 ## Part 3: Build & Run
 
 * `src/` contains the source code.
 * `external/` contains the binaries and headers for GLEW and GLFW.
+* `DXR/` contains the project used to check `DXR` compatibility.
 
 **CMake note:** Do not change any build settings or add any files to your
 project directly (in Visual Studio, Nsight, etc.) Instead, edit the
@@ -142,10 +198,18 @@ just rebuild your VS/Nsight project to make it update itself.
      your program to run with only the NVIDIA card. In NVIDIA Control Panel,
      under "Manage 3D Settings," set "Multi-display/Mixed GPU acceleration"
      to "Single display performance mode".
+8. DXR Support:
+     * Open Visual Studio 2017.
+     * `File` > `Open` > `Project/Solution`
+     * Navigate to the `DXR/` folder and open `D3D12Raytracing.sln`
+     * In the solutions view, right click on `D3D12RaytracingHelloWorld` and then `Set as Startup Project`
+     * Build and run the project. This can be done by hitting `CTRL + F5`
+     * If you're able to see an app that displays a triangle, then you have `DXR` support on your machine.
+          * If the title of your app contains `(FL)` then this means that your machine is using the provided Fallback layer to emulate realtime raytracing with GPU compute cores. If you do not see this, then you actually have an RTX card!
 
 ### OS X & Linux
 
-It is recommended that you use Nsight. Nsight is shipped with CUDA. If you set up the environment path correctly `export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}` (Note that simply typing the `export` command is a temporary change. The `PATH` variable won't be updated permanently. For permanent change, add it to your shell configuration file, e.g. `~/.profile` on Ubuntu), you can run Nsight by typing `nsight` in your terminal. 
+It is recommended that you use Nsight. Nsight is shipped with CUDA. If you set up the environment path correctly `export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}` (Note that simply typing the `export` command is a temporary change. The `PATH` variable won't be updated permanently. For permanent change, add it to your shell configuration file, e.g. `~/.profile` on Ubuntu), you can run Nsight by typing `nsight` in your terminal. 
 
 1. Open Nsight. Set the workspace to the one *containing* your cloned repo.
 2. *File->Import...->General->Existing Projects Into Workspace*.
