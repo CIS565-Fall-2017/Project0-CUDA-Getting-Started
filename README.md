@@ -1,4 +1,4 @@
-Project 0 CUDA Getting Started
+Project 0 Getting Started
 ====================
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
