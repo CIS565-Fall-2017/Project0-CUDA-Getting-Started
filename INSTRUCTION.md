@@ -1,4 +1,4 @@
-Project 0 CUDA Getting Started: Instructions
+Project 0 Getting Started: Instructions
 ========================
 
 This is due ** TODO NEW DEADLINE**. (See [late policy](#late-policy) at the bottom)
