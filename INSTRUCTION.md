@@ -1,7 +1,7 @@
 Project 0 CUDA Getting Started: Instructions
 ========================
 
-This is due **Friday, August 31st 2018**. (See [late policy](#late-policy) at the bottom)
+This is due ** TODO NEW DEADLINE**. (See [late policy](#late-policy) at the bottom)
 
 **Summary:** In this project, you will set up your GPU development tools and
 verify that you can build, run, and do performance analysis.
@@ -40,16 +40,16 @@ graphics card.
    * Once you're in the Microsoft Azure download page, look for `Visual Studio 2017 Community` and download it.
    * Make sure this ends up installing the `Visual Studio Installer` so you can select the packages you want.
    * Once in the installer, do the following:
-          * Under the `Workloads` tab, select `Desktop Development with C++`. This will select almost everything you will need.
-          * Under the `Individual Components Tab`, make sure these packages are selected. DO NOT uncheck everything else.
-               * `VC++ 2017 version 15.9 v14.16 latest v141 tools`
-               * `Visual Studio C++ core features`
-               * `C++ Profiling Tools`
-               * `C++/CLI support`
-               * `Visual C++ ATL for x86 and x64`
-               * `Windows 10 SDK 10.0.17763.0`
-               * `NuGet Package Manager`
-               * `MSBuild`
+     * Under the `Workloads` tab, select `Desktop Development with C++`. This will select almost everything you will need.
+     * Under the `Individual Components Tab`, make sure these packages are selected. DO NOT uncheck everything else.
+        * `VC++ 2017 version 15.9 v14.16 latest v141 tools`
+        * `Visual Studio C++ core features`
+        * `C++ Profiling Tools`
+        * `C++/CLI support`
+        * `Visual C++ ATL for x86 and x64`
+        * `Windows 10 SDK 10.0.17763.0`
+        * `NuGet Package Manager`
+        * `MSBuild`
 
 3. Install [CUDA 10](https://developer.nvidia.com/cuda-downloads).
    * Use the Express installation. If using Custom, make sure you select Nsight for Visual Studio.
@@ -130,14 +130,11 @@ Capability 5.0.
                * Software only, hardware acceleration unavailable — WebGL is *enabled*, but running in software.
                * Unavailable — WebGL is *not available* in hardware or software.
 
-## Part 1.3: DirectX Raytracing (DXR/RTX)
+## Part 1.3: DXR
 
 This part will *only* work if you are using a Windows 10 computer. Skip this if you are not using Windows 10.
 
-1. Check that your GPU has [DirectX 12 support](https://www.geforce.co.uk/hardware/technology/dx12/supported-gpus) 
-2. Enable [Developer Mode](https://www.wikihow.com/Enable-Developer-Mode-in-Windows-10)
-3. Download [Windows SDK version 1809 (10.0.17763.0)](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive) and install it (use the `INSTALL SDK` option when downloading)
-4. Once you reach Part 3 in the Windows section, check if you can run the `D3D12RaytracingHelloWorld` project.
+1. Follow this [GitHub link](https://github.com/CIS565-Fall-2018/Project0-DXR-Support) once you're done with all parts in this readme.
 
 ## Part 2: Fork & Clone
 
@@ -163,7 +160,6 @@ This part will *only* work if you are using a Windows 10 computer. Skip this if 
 
 * `src/` contains the source code.
 * `external/` contains the binaries and headers for GLEW and GLFW.
-* `DXR/` contains the project used to check `DXR` compatibility.
 
 **CMake note:** Do not change any build settings or add any files to your
 project directly (in Visual Studio, Nsight, etc.) Instead, edit the
@@ -198,14 +194,6 @@ just rebuild your VS/Nsight project to make it update itself.
      your program to run with only the NVIDIA card. In NVIDIA Control Panel,
      under "Manage 3D Settings," set "Multi-display/Mixed GPU acceleration"
      to "Single display performance mode".
-8. DXR Support:
-     * Open Visual Studio 2017.
-     * `File` > `Open` > `Project/Solution`
-     * Navigate to the `DXR/` folder and open `D3D12Raytracing.sln`
-     * In the solutions view, right click on `D3D12RaytracingHelloWorld` and then `Set as Startup Project`
-     * Build and run the project. This can be done by hitting `CTRL + F5`
-     * If you're able to see an app that displays a triangle, then you have `DXR` support on your machine.
-          * If the title of your app contains `(FL)` then this means that your machine is using the provided Fallback layer to emulate realtime raytracing with GPU compute cores. If you do not see this, then you actually have an RTX card!
 
 ### OS X & Linux
 
@@ -327,6 +315,8 @@ The template of the comment section of your pull request is attached below, you 
     * Feature 1
     * ...
 * Feedback on the project itself, if any.
+* Do not forget to check for DXR compatibility. See section 1.3 above.
+* Fill out this *mandatory* [survey](TODO SURVEY LINK HERE).
 
 And you're done!
 
