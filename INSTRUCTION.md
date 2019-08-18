@@ -177,7 +177,7 @@ just rebuild your VS/Nsight project to make it update itself.
    * `cmake-gui ..` or `"C:\Program Files (x86)\cmake\bin\cmake-gui.exe" ..`
      * Don't forget the `..` part!
    * Make sure that the "Source" directory is like
-     `.../Project0-CUDA-Getting-Started`.
+     `.../Project0-Getting-Started`.
    * Click *Configure*.  Select your version of Visual Studio, Win64.
      (**NOTE:** you must use Win64, as we don't provide libraries for Win32.)
    * If you see an error like `CUDA_SDK_ROOT_DIR-NOTFOUND`,
