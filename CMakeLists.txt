@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.1)
 
 project(cis565_getting_started)
 
+# IMPORTANT: Set this to the correct path to cl.exe. It should be under the MSVStudio 2017 installation directory 
+# e.g: "D:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x64/cl.exe"
+set(CL_PATH "D:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x64/cl.exe")
+
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 # Set up include and lib paths
@@ -12,7 +16,15 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     set(EXTERNAL_LIB_PATH "${EXTERNAL}/lib/linux" "/usr/lib64")
 elseif(WIN32)
-    if(${MSVC_VERSION} MATCHES "1900")
+	if(${MSVC_VERSION} MATCHES "1916")
+        set(EXTERNAL_LIB_PATH "${EXTERNAL}/lib/win/vc2017")
+		
+		if ("${CL_PATH}" MATCHES "NULL")
+			MESSAGE("Error: please set CL_PATH to a correct path to cl.exe. Edit this in CMakeLists.txt under the project root.")
+		endif()
+		
+		set(CUDA_HOST_COMPILER "${CL_PATH}")
+    elseif(${MSVC_VERSION} MATCHES "1900")
         set(EXTERNAL_LIB_PATH "${EXTERNAL}/lib/win/vc2015")
     elseif(${MSVC_VERSION} MATCHES "1800")
         set(EXTERNAL_LIB_PATH "${EXTERNAL}/lib/win/vc2013")
@@ -66,7 +78,7 @@ endif()
 
 # Crucial magic for CUDA linking
 find_package(Threads REQUIRED)
-find_package(CUDA 8.0 REQUIRED)
+find_package(CUDA 10.0 REQUIRED)
 
 set(CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE ON)
 set(CUDA_SEPARABLE_COMPILATION ON)
