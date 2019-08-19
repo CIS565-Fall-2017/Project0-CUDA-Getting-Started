@@ -20,6 +20,11 @@ graphics card.
 
 **Even if you need to use the lab computer for your development, follow these steps:**
 
+## Part 0: Sign up to CIS 565 on Piazza and fill out the form
+
+- Sign up [here](http://piazza.com/upenn/fall2019/cis565) to our piazza class - we will be using Piazza for questions / updates. We encourage student questions and responses on this, meaning the TAs will wait a bit before responding to posts to promote student engagement. 
+- Fill out the form in the [@6](https://piazza.com/class/jz8re68445r142?cid=6) post.
+
 ## Part 1: Setting up your development environment
 
 #### Notes
